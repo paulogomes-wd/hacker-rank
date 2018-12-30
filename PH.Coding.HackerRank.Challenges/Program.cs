@@ -1,4 +1,4 @@
-﻿using System;
+﻿using ProblemResolution = PH.Coding.HackerRank.Challenges.Sock_Merchant.ProblemResolution;
 
 namespace PH.Coding.HackerRank.Challenges
 {
@@ -6,7 +6,7 @@ namespace PH.Coding.HackerRank.Challenges
     {
         static void Main(string[] args)
         {
-            // Console.WriteLine("Hello World!");
+            ProblemResolution.Apply(args);
         }
     }
 }
