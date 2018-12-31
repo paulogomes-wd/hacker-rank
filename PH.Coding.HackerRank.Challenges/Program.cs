@@ -1,4 +1,4 @@
-﻿using ProblemResolution = PH.Coding.HackerRank.Challenges.Jumping_on_the_Clouds.ProblemResolution;
+﻿using ProblemResolution = PH.Coding.HackerRank.Challenges.Repeated_String.ProblemResolution;
 
 namespace PH.Coding.HackerRank.Challenges
 {

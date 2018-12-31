@@ -4,7 +4,7 @@ using System;
 
 namespace PH.Coding.HackerRank.Challenges.Sock_Merchant
 {
-    public static class ProblemResolution
+    public class ProblemResolution
     {
         public static void Apply(string[] args){
             Console.Write("Please provide a number (integer): ");
