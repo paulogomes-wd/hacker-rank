@@ -1,4 +1,4 @@
-﻿using ProblemResolution = PH.Coding.HackerRank.Challenges.Data_Types.ProblemResolution;
+﻿using ProblemResolution = PH.Coding.HackerRank.Challenges.Arrays_Left_Rotation.ProblemResolution;
 
 namespace PH.Coding.HackerRank.Challenges
 {
