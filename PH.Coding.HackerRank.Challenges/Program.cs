@@ -1,4 +1,4 @@
-﻿using ProblemResolution = PH.Coding.HackerRank.Challenges.BiDimensional_Array_DS.ProblemResolution;
+﻿using ProblemResolution = PH.Coding.HackerRank.Challenges.Data_Types.ProblemResolution;
 
 namespace PH.Coding.HackerRank.Challenges
 {
