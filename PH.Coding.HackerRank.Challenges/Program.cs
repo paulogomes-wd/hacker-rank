@@ -1,4 +1,4 @@
-﻿using ProblemResolution = PH.Coding.HackerRank.Challenges.Sock_Merchant.ProblemResolution;
+﻿using ProblemResolution = PH.Coding.HackerRank.Challenges.Counting_Valleys.ProblemResolution;
 
 namespace PH.Coding.HackerRank.Challenges
 {
