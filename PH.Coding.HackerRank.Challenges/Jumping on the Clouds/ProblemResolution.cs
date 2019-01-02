@@ -8,7 +8,7 @@ namespace PH.Coding.HackerRank.Challenges.Jumping_on_the_Clouds
             Console.Write("Please provide a number (integer): ");
             int n = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Now insert a sequence of integers: ");
+            Console.Write("Now insert a sequence of integers (space-separated): ");
             int[] c = Array.ConvertAll(Console.ReadLine().Trim().Split(' '), cTemp => Convert.ToInt32(cTemp));
 
             int result = jumpingOnClouds(c);
