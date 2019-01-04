@@ -22,48 +22,28 @@ namespace PH.Coding.HackerRank.Challenges.New_Year_Chaos
                 minimumBribes(q);
 
                 watch.Stop();
-                Console.WriteLine($"It took {watch.ElapsedMilliseconds} to execute");
+                Console.WriteLine($"It took {watch.ElapsedMilliseconds} to execute.");
             }
         }
 
         private static void minimumBribes(int[] q){
-            int minimumBribes = 0, tempBribes, i, j;
+            int i, j, minimumBribes = 0;
             if(q.Length < 2) {
                 Console.WriteLine(minimumBribes);
                 return;
             }
 
-            for(i = 0; i < q.Length - 1; i++) {
+            for(i = q.Length - 1; i >= 0; i--) {
                 if (q[i] > i + 3) {
                     Console.WriteLine("Too chaotic");
                     return;
                 }
-                if (q[i] == i + 3 || q[i] == i + 2){
-                    minimumBribes += q[i] - (i + 1);
-                    continue;
-                }
-                // if (q[i] == i + 3){
-                //     minimumBribes += 2;
-                //     continue;
-                // }
-                // if (q[i] == i + 2){
-                //     minimumBribes++;
-                //     continue;
-                // }
-                
-                tempBribes = 0;
-                //for(j = q.Length - 1; j > i; j--) {
-                for(j = i + 1; j < q.Length; j++) {
-                    if(q[i] > q[j]) {
-                        tempBribes++;
 
-                        if(tempBribes > 2) {
-                            Console.WriteLine("Too chaotic");
-                            return;
-                        }
+                for (j = q[i] - 2 > 0 ? q[i] - 2 : 0; j < i; j++){
+                    if(q[j] > q[i]) {
+                        minimumBribes++;
                     }
                 }
-                minimumBribes += tempBribes;
             }
             Console.WriteLine(minimumBribes);
         }
