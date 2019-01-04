@@ -10,7 +10,7 @@ namespace PH.Coding.HackerRank.Challenges.Sock_Merchant
             Console.Write("Please provide a number (integer): ");
             int n = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Now insert a sequence of integers: ");
+            Console.Write("Now insert a sequence of integers (space-separated): ");
             int[] ar = Array.ConvertAll(Console.ReadLine().Trim().Split(' '), arTemp => Convert.ToInt32(arTemp));
 
             int result = sockMerchant(n, ar);

@@ -22,7 +22,7 @@ namespace PH.Coding.HackerRank.Challenges.New_Year_Chaos
                 minimumBribes(q);
 
                 watch.Stop();
-                Console.Write($" <-- It took {watch.ElapsedMilliseconds} to execute");
+                Console.WriteLine($"It took {watch.ElapsedMilliseconds} to execute");
             }
         }
 
@@ -38,13 +38,29 @@ namespace PH.Coding.HackerRank.Challenges.New_Year_Chaos
                     Console.WriteLine("Too chaotic");
                     return;
                 }
+                if (q[i] == i + 3 || q[i] == i + 2){
+                    minimumBribes += q[i] - (i + 1);
+                    continue;
+                }
+                // if (q[i] == i + 3){
+                //     minimumBribes += 2;
+                //     continue;
+                // }
+                // if (q[i] == i + 2){
+                //     minimumBribes++;
+                //     continue;
+                // }
                 
                 tempBribes = 0;
+                //for(j = q.Length - 1; j > i; j--) {
                 for(j = i + 1; j < q.Length; j++) {
-                    if(q[i] > q[j]) { tempBribes++; }
-                    if(tempBribes > 2) {
-                        Console.WriteLine("Too chaotic");
-                        return;
+                    if(q[i] > q[j]) {
+                        tempBribes++;
+
+                        if(tempBribes > 2) {
+                            Console.WriteLine("Too chaotic");
+                            return;
+                        }
                     }
                 }
                 minimumBribes += tempBribes;
